@@ -1,19 +1,17 @@
 import { NavLink } from "react-router-dom";
 import "./style.css";
 import links from "./Links";
-const Sidebar = () => {
+type SidebarProps = {
+  active: boolean;
+};
+const Sidebar = ({ active }: SidebarProps) => {
   return (
-    <nav className="nav">
+    <nav className={`nav ${active ? "active" : ""}`}>
       <ul className="nav__item">
         {links.map((link, i) => (
-          <li key={i} className="nav__link">
-            <NavLink
-              className={({ isActive }) => (isActive ? "active-link" : "")}
-              to={link.to}
-            >
-              {link.text}
-            </NavLink>
-          </li>
+          <NavLink key={i} className="nav__link" to={link.to}>
+            {link.text}
+          </NavLink>
         ))}
       </ul>
     </nav>

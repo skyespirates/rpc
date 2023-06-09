@@ -1,19 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 :root {
-  --background: #fefefe;
-  --surface: #dedede;
-  --primary: ;
-  --secondary: ;
-  --onBackground: ;
-  --onSurface: ;
-  --onPrimary: ;
-  --onSecondary: ;
+  --background: #fff;
+  --surface: #f7f7f7;
+
+  --primary: #f44250;
+  --secondary: #0078d7;
+  --tertiary: #30ba2d;
+
+  --onBackground: #121212;
+  --textBody: #434343;
+  --textGray: #818181;
+  --textGrayHover: #111827;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--background);
+  transition: background-color 0.4s;
+  min-height: 100vh;
 }
 body,
 button,
@@ -22,14 +27,13 @@ input {
 }
 
 body.dark-theme {
-  --background: #121221;
-  --surface: #323232;
-  --primary: ;
-  --secondary: ;
-  --onBackground: ;
-  --onSurface: ;
-  --onPrimary: ;
-  --onSecondary: ;
+  --background: #111827;
+  --surface: #383838;
+
+  --onBackground: #fff;
+  --textBody: #e3e3e3;
+  --textGray: #9ca3af;
+  --textGrayHover: #f9fafb;
 }
 
 * {

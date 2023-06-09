@@ -5,12 +5,35 @@
   grid-template-areas:
     "header header"
     "nav surface";
-  grid-gap: 1rem;
-  height: 100vh;
+  height: 100%;
 }
 .surface {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  grid-area: surface;
+}
+.surface__toggle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-area: surface;
+  color: var(--textBody);
+  background-color: var(--surface);
+  font-size: 1.25rem;
+}
+.surface__toggle:hover {
+  background-color: var(--textGray);
+}
+
+.container.active {
+  grid-template-areas:
+    "header header"
+    "surface surface";
 }

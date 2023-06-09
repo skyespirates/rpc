@@ -17,17 +17,17 @@
   text-align: center;
   margin-bottom: 2rem;
   border-bottom: 3px solid crimson;
+  color: var(--textBody);
 }
 .tours__container {
   display: grid;
   row-gap: 2rem;
 }
 .tour {
-  width: 400px;
+  max-width: 400px;
   height: max-content;
-  display: grid;
-  row-gap: 1rem;
-  border: 2px solid #036ebe;
+  border: 2px solid var(--surface);
+  margin: auto;
 }
 .tour__img {
   width: 100%;
@@ -35,23 +35,41 @@
   object-fit: cover;
 }
 .tour__body {
-  padding: 1rem;
+  padding: 2rem 1rem;
+  background-color: var(--surface);
+  transition: background-color 0.4s;
 }
 .tour__title {
   display: flex;
   justify-content: space-between;
+}
+.tour__name {
+  color: var(--tertiary);
+}
+.tour__price {
+  color: var(--primary);
+  font-weight: 600;
+}
+.tour__info {
+  color: var(--textBody);
 }
 button {
   font-size: 1rem;
 }
 .tour__info-button {
   background-color: transparent;
-  color: #036ebe;
+  color: var(--secondary);
 }
 .tour__info-button:hover {
-  color: crimson;
+  color: var(--primary);
 }
 .tour__button {
   width: 100%;
   padding: 0.5rem 0;
+  background-color: var(--secondary);
+  color: var(--background);
+}
+.tours__empty h2,
+.tour__loading {
+  color: var(--textBody);
 }

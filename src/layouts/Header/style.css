@@ -1,10 +1,12 @@
 .header {
-  grid-area: header;
-  background-color: grey;
+  position: relative;
+  background-color: var(--background);
   padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid var(--textGray);
+  grid-area: header;
 }
 
 .header__item {
@@ -15,7 +17,7 @@
 .header__logo {
   font-size: 1.5rem;
   font-weight: 600;
-  color: rgb(119, 178, 255);
+  color: var(--primary);
 }
 .change-theme {
   width: 24px;
@@ -24,12 +26,18 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  background-color: var(--surface);
+  transition: background-color 0.4s;
+}
+.change-theme:hover {
+  background-color: var(--textGray);
 }
 .change-theme svg {
   font-size: 1.25rem;
+  color: var(--textBody);
 }
 .header__github {
-  color: #fff;
+  color: var(--textGray);
   display: flex;
   justify-content: center;
   align-items: center;

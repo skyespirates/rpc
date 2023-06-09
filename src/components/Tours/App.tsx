@@ -38,7 +38,7 @@ const Tours = () => {
     );
   }
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div className="tour__loading">Loading...</div>;
 
   if (tours?.length === 0)
     return (
