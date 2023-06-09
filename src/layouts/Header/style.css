@@ -1,0 +1,39 @@
+.header {
+  grid-area: header;
+  background-color: grey;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__item {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(119, 178, 255);
+}
+.change-theme {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.change-theme svg {
+  font-size: 1.25rem;
+}
+.header__github {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__github svg {
+  font-size: 1.8rem;
+}

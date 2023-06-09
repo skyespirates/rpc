@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 48px 1fr;
+  grid-template-areas:
+    "header header"
+    "nav surface";
+  grid-gap: 1rem;
+  height: 100vh;
+}
+.surface {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: surface;
+}

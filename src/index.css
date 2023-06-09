@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --background: #fefefe;
+  --surface: #dedede;
+  --primary: ;
+  --secondary: ;
+  --onBackground: ;
+  --onSurface: ;
+  --onPrimary: ;
+  --onSecondary: ;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+}
+body,
+button,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+body.dark-theme {
+  --background: #121221;
+  --surface: #323232;
+  --primary: ;
+  --secondary: ;
+  --onBackground: ;
+  --onSurface: ;
+  --onPrimary: ;
+  --onSecondary: ;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

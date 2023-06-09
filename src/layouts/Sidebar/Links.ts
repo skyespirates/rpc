@@ -1,0 +1,17 @@
+export default [
+  { to: "/", text: "Birthday Card" },
+  { to: "/tours", text: "Tours" },
+  { to: "/reviews", text: "Reviews" },
+  { to: "/accordion", text: "Accordion" },
+  { to: "/menu", text: "Menu" },
+  { to: "/tabs", text: "Tabs" },
+  { to: "/slider", text: "Slider" },
+  { to: "/loremipsum", text: "Lorem Ipsum" },
+  { to: "/color", text: "Color" },
+  { to: "/groderybud", text: "Grodery Bud" },
+  { to: "/navbar", text: "Navbar" },
+  { to: "/sidebar", text: "Sidebar" },
+  { to: "/stripe", text: "Stripe" },
+  { to: "/cart", text: "Cart" },
+  { to: "/coktails", text: "Coktails" },
+];

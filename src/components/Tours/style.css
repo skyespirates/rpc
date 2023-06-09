@@ -1,0 +1,57 @@
+.tours__empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tours__empty button {
+  padding: 0.25rem 0.5rem;
+  background-color: #036ebe;
+  color: #fff;
+}
+.tours__empty button:hover {
+  color: #ddd;
+}
+
+.tours__title {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid crimson;
+}
+.tours__container {
+  display: grid;
+  row-gap: 2rem;
+}
+.tour {
+  width: 400px;
+  height: max-content;
+  display: grid;
+  row-gap: 1rem;
+  border: 2px solid #036ebe;
+}
+.tour__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.tour__body {
+  padding: 1rem;
+}
+.tour__title {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  font-size: 1rem;
+}
+.tour__info-button {
+  background-color: transparent;
+  color: #036ebe;
+}
+.tour__info-button:hover {
+  color: crimson;
+}
+.tour__button {
+  width: 100%;
+  padding: 0.5rem 0;
+}
